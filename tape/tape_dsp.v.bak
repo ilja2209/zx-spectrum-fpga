@@ -1,0 +1,9 @@
+module tape_dsp
+(
+	input[11:0] in_adc,
+	output ear
+);
+
+assign ear = in_adc > 12'h100;
+
+endmodule
